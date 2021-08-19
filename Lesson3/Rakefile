@@ -1,0 +1,5 @@
+desc 'Выводим время и дату'
+task :time do
+	t = Time.new
+	puts t.strftime("%T %d %B %Y") 
+end
