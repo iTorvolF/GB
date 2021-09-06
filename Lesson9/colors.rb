@@ -5,4 +5,4 @@ C = Hash[
   'green' => 4, 'indigo' => 5, 'blue' => 6, 'violet' => 7
 ]
 print 'Введите цвет: '
-puts (C[gets.chomp]).to_s
+puts (C[gets.chomp]).to_i
