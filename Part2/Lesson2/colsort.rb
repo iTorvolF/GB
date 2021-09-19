@@ -10,4 +10,4 @@ loop do
   arr << color
 end
 
-puts arr.sort.uniq
+puts arr.reject(&:empty?).sort.uniq
