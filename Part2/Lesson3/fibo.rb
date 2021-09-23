@@ -6,4 +6,4 @@ def fib0(n)
   puts fib0.join(', ')
 end
 
-puts fib0(10)
+fib0(10)
