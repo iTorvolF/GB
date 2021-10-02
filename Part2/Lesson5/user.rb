@@ -11,7 +11,11 @@ class User
 end
 
 user = User.new(family: 'Иванов', name: 'Иван', midname: 'Иванович')
+user1 = User.new(family: 'Петров', name: 'Петр', midname: 'Петрович')
 
 puts "Фамилия пользователя: #{user.family}"
 puts "Имя пользователя: #{user.name}"
 puts "Отчество пользователя: #{user.midname}"
+puts "Фамилия пользователя: #{user1.family}"
+puts "Имя пользователя: #{user1.name}"
+puts "Отчество пользователя: #{user1.midname}"
