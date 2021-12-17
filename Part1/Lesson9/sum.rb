@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# Создайте метод sum, который принимает любое количество числовых аргументов и возвращает их сумму.
+
 def sum(*params)
   p params.sum
 end
