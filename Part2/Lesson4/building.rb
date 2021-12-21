@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+# Создайте класс здания Building. Создайте в нем минимум два метода. 
+# Постройте объект этого класса и выведите его состояние.
+
 class Building
   ROOMS = 120
   FLOORS = 5
