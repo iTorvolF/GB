@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+# Под документации языка программирования Ruby познакомьтесь с модулем Singleton. 
+# На уроке мы разрабатывали паттерн "Одиночка". Теперь реализуйте его с применением модуля Singleton.
+
 require 'singleton'
 
 class Settings
