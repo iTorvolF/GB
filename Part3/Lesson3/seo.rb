@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+# Вместо атрибутов meta_title, meta_description и meta_keywords создайте класс Seo с атрибутами title, description и keywords. 
+# В классы News и About добавьте SEO-информацию с использованием класса Seo.
+
 class Seo
   attr_accessor :title, :description, :keywords
 
