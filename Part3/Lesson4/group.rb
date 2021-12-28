@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+# Создайте класс Group, объект которого должен представлять коллекцию пользователей класса User. 
+# Задействуйте для реализации класса Group модуль Enumerable.
+
 class Group
   include Enumerable
   attr_accessor :staff
