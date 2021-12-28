@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+# Создайте объект новостной заметки News, которая должна содержать название, тело новости и дату публикации. 
+# Задействуйте модуль Comparable и реализуйте сравнение новостей: чем более свежая новость, тем она "больше".
+
 class News
   include Comparable
   attr_accessor :name, :date, :body
