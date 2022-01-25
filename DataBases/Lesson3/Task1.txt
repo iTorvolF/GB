@@ -1,0 +1,3 @@
+В таблице streams переименуйте столбец даты начала обучения в started_at.
+
+ALTER TABLE streams RENAME COLUMN start_date TO started_at
