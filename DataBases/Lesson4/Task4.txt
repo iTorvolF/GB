@@ -1,0 +1,3 @@
+Найдите количество преподавателей в базе данных. Выведите искомое значение в столбец с именем total_teachers.
+
+select count(*) as 'total_teachers' from teachers;
