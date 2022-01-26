@@ -1,0 +1,3 @@
+Найдите среднюю успеваемости учеников по потокам преподавателя с идентификатором равным 1.
+
+select avg(performance) from grades where teacher_id = 1;
