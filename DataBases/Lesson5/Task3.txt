@@ -1,0 +1,7 @@
+Найдите среднюю успеваемость всех потоков преподавателя Николая Савельева. В отчёт выведите идентификатор преподавателя и среднюю оценку по потокам.
+
+select
+	(select id from teachers where surname = 'Савельев' and name = 'Николай') as teacher_id,
+	AVG(performance)
+	from grades
+	where grades.teacher_id = (select id from teachers where surname = 'Савельев' and name = 'Николай');
