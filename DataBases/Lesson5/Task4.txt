@@ -1,0 +1,12 @@
+Найдите потоки преподавателя Натальи Петровой, а также потоки, по которым успеваемость ниже 4.8. В отчёт выведите идентификатор потока, фамилию и имя преподавателя.
+
+select stream_id, 
+	(select surname || ' ' || name 
+	from teachers where teachers.id = grades.teacher_id)
+	from grades
+	where teacher_id = (select id from teachers where name = 'Наталья' and surname = 'Петрова')
+UNION
+select stream_id,
+	(select surname || ' ' || name 
+	from teachers where teachers.id = grades.teacher_id)
+	from grades where performance < 4.8;
