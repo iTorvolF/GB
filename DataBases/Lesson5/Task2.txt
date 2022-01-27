@@ -1,0 +1,10 @@
+Найдите два потока с самыми низкими значениями успеваемости. В отчет выведите номер потока, название курса, фамилию и имя преподавателя (одним столбцом), оценку успеваемости.
+
+select (select number from streams where streams.id = grades.stream_id) as stream_number, 
+       (select 
+       (select name from courses where courses.id = streams.course_id)
+        from streams where grades.stream_id = streams.id) as course_name, 
+       (select surname || ' ' || name from teachers where grades.teacher_id = teachers.id) as teacher_name,
+       performance 
+	from grades 
+	order by performance ASC limit 2;	
