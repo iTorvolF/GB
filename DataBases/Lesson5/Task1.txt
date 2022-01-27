@@ -1,0 +1,7 @@
+Найдите потоки, количество учеников в которых больше или равно 40. В отчет выведите номер потока, название курса и количество учеников.
+
+select number, 
+	(select name from courses where courses.id = course_id) as course_name, 
+	students_amount 	
+	from streams 
+	WHERE students_amount >= 40;
