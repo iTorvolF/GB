@@ -1,0 +1,11 @@
+Для всех учителей найдите среднюю оценку по всем проведённым потокам. В отчёт выведите идентификатор, фамилию и имя учителя, среднюю оценку по всем проведенным потокам. Важно чтобы учителя, у которых не было потоков, также попали в выборку.
+
+select
+	teachers.id as teacher_id,
+	teachers.name as teacher_name,
+	teachers.surname as teacher_surname,
+	avg(performance) as average_grade
+from teachers
+	inner join grades
+	on teachers.id = grades.teacher_id
+group by teacher_id;
