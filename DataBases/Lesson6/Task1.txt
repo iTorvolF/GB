@@ -1,0 +1,9 @@
+Покажите информацию по потокам. В отчет выведите номер потока, название курса и дату начала занятий.
+
+select
+	streams.number as stream_number,
+	streams.started_at as start_date,
+	courses.name as course_name
+from streams
+	inner join courses
+	on streams.course_id = courses.id;
