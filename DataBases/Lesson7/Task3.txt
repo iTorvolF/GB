@@ -1,0 +1,13 @@
+Создайте триггер для таблицы успеваемости, который проверяет значение успеваемости на соответствие диапазону чисел от 0 до 5 включительно.
+
+create trigger check_grade before insert 
+on grades 
+begin
+  select case 
+    when 
+	 new.performance < 0 
+      or new.performance > 5 
+    then
+      raise (abort, 'Grade should be between 0 and 5')
+    end;
+end;
