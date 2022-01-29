@@ -1,0 +1,14 @@
+Создайте представление, которое для каждого курса выводит название, номер последнего потока, дату начала обучения последнего потока и среднюю успеваемость курса по всем потокам.
+
+create view courses_info as
+   select
+	courses.name as course_name,
+	max(streams.number) as max_stream_number,
+	streams.started_at as start_date,
+	avg(grades.performance) as average_grade
+from courses
+	left join streams
+		on courses.id = streams.course_id
+	left join grades
+		on streams.id = grades.stream_id
+group by name;
