@@ -1,0 +1,6 @@
+Удалите из базы данных всю информацию, которая относится к преподавателю с идентификатором, равным 3. Используйте транзакцию.
+
+begin transaction;
+	delete from teachers where id = 3;
+	delete from grades where teacher_id = 3;
+commit;
