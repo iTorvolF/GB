@@ -1,0 +1,9 @@
+Найдите среднюю оценку по всем потокам для всех учителей. В отчёт выведите идентификатор, фамилию и имя учителя, среднюю оценку по всем проведённым потокам. Учителя, у которых не было потоков, также должны попасть в выборку. Решите задание с применением оконных функций.
+
+select distinct 
+	teachers.id,
+	teachers.surname,
+	teachers.name,
+	avg(grades.performance) over (partition by grades.teacher_id)
+from teachers 
+     left join grades on grades.teacher_id = teachers.id;
