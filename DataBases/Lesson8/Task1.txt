@@ -1,0 +1,7 @@
+Найдите общее количество учеников для каждого курса. В отчёт выведите название курса и количество учеников по всем потокам курса. Решите задание с применением оконных функций.
+
+select distinct 
+	courses.name,
+	sum(streams.students_amount) over (partition by streams.course_id)
+from courses 
+	left join streams on courses.id = streams.course_id;
