@@ -1,0 +1,15 @@
+Какие индексы надо создать для максимально быстрого выполнения представленного запроса?
+SELECT
+  surname,
+  name,
+  number,
+  performance
+FROM academic_performance
+  JOIN teachers 
+    ON academic_performance.teacher_id = teachers.id
+  JOIN streams
+    ON academic_performance.stream_id = streams.id
+WHERE number >= 200;
+
+create index teachers_surname_name_idx on teachers(surname, name);
+create index streams_number_idx on streams(number);
