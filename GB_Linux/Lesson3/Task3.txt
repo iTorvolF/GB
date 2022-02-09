@@ -1,0 +1,7 @@
+3. Создать пользователя с правами суперпользователя. Сделать так, чтобы sudo не требовал пароль для выполнения команд.
+
+sudo adduser user2
+sudo usermod -aG sudo user2
+sudo visudo
+%sudo   ALL=(ALL:ALL) NOPASSWD:ALL
+
