@@ -1,0 +1,13 @@
+2. Управление группами:
+a) создать группу с использованием утилит и в ручном режиме;
+b) попрактиковаться в смене групп у пользователей;
+c) добавить пользователя в группу, не меняя основной;
+d) удалить пользователя из группы.
+
+sudo groupadd test
+sudo nano /etc/group
+test1:x:1002:
+sudo usermod -aG test1 user1
+sudo usermod -g test user1
+sudo usermod -G "" user1
+sudo gpasswd -d user1 test
