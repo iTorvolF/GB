@@ -1,0 +1,18 @@
+1. Управление пользователями:
+a) создать пользователя, используя утилиту useradd;
+b) удалить пользователя, используя утилиту userdel;
+c) создать пользователя в ручном режиме.
+
+useradd -s /bin/bash -d /home/user -m user1
+
+sudo userdel -r user1
+
+sudo nano /etc/passwd
+user2:x:1002:1002::/home/user2:/bin/bash
+sudo nano /etc/group
+user2:x:1002:
+sudo passwd user2
+sudo mkdir /home/user2
+sudo chown user2:user2 /home/user2
+
+
