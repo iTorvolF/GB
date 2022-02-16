@@ -1,0 +1,11 @@
+2. Дать созданным файлам другие, произвольные имена. Создать новую символическую ссылку. Переместить ссылки в другую директорию.
+
+mv file2 file_2
+mv file4 file_4
+ln -s file_2 link_file_2
+ln -s file_4 link_file_4
+mkdir lesson5
+mv link_file_2 lesson5
+mv link_file_4 lesson5
+
+Новые символические ссылки перестают работать.
