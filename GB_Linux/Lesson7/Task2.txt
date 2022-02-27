@@ -1,0 +1,3 @@
+2. Установить пакет на свой выбор, используя snap.
+
+snap install --edge tetris
