@@ -1,0 +1,9 @@
+1. Подключить репозиторий с nginx любым удобным способом, установить nginx и потом удалить nginx, используя утилиту dpkg.
+
+sudo nano /etc/apt/sources.list
+deb http://nginx.org/packages/ubuntu focal nginx
+
+sudo apt update
+sudo apt install nginx -y
+sudo dpkg -r nginx
+
