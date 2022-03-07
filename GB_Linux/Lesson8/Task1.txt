@@ -1,0 +1,5 @@
+1. Переустановить операционную систему, подключить репозиторий Docker.
+
+sudo apt update
+sudo apt install docker.io
+docker --version
