@@ -1,0 +1,3 @@
+2. Запустить контейнер с Ubuntu.
+
+sudo docker run ubuntu
