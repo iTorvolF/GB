@@ -1,0 +1,5 @@
+utf8: ✓
+authenticity_token: vEQ2Ie2U6mef4YEuKNieCTi71sjf4HAhS+clEJuD69SIqLTFGWtbcLUVyrW60MqKSjlmLL5N+dafZ8bGecalEQ==
+user[email]: ***
+user[password]: ***
+user[remember_me]: 0
