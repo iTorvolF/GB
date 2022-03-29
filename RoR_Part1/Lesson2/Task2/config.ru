@@ -5,7 +5,7 @@ require 'rack'
 class App
   class << self
     def call(_env)
-      [200, { 'Content-Type' => 'text/html' }, [template('X-Ruby-Version' => RUBY_VERSION.to_s)]]
+      [200, { 'Content-Type' => 'text/html', X-Ruby-Version' => RUBY_VERSION.to_s }, [template('Hello, Ruby!)]]
     end
 
     def template(name)
