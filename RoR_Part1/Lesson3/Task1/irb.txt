@@ -1,0 +1,15 @@
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/reline-0.3.1/lib
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/irb-1.4.1/lib
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/io-console-0.5.11/lib
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/extensions/x64-mingw32/3.0.0/io-console-0.5.11
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/timeout-0.2.0/lib
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/io-wait-0.2.1/lib
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/extensions/x64-mingw32/3.0.0/io-wait-0.2.1
+C:/Ruby30-x64/lib/ruby/site_ruby/3.0.0
+C:/Ruby30-x64/lib/ruby/site_ruby/3.0.0/x64-msvcrt
+C:/Ruby30-x64/lib/ruby/site_ruby
+C:/Ruby30-x64/lib/ruby/vendor_ruby/3.0.0
+C:/Ruby30-x64/lib/ruby/vendor_ruby/3.0.0/x64-msvcrt
+C:/Ruby30-x64/lib/ruby/vendor_ruby
+C:/Ruby30-x64/lib/ruby/3.0.0
+C:/Ruby30-x64/lib/ruby/3.0.0/x64-mingw32
